@@ -20,11 +20,10 @@ body nav.navbar {
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  margin-bottom: 5.3vw;
   padding: 1vw 2.7vw;
   background: #1d1d1f; }
   body nav.navbar .navbar__home a {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2.250rem;
@@ -37,7 +36,19 @@ body nav.navbar {
       display: flex;
       justify-content: center; }
       body nav.navbar .navbar__menu .navbar__list a {
-        padding: .53vw;
+        padding: 1vw;
+        color: #ffffff;
+        font-weight: 600; }
+  body nav.navbar .navbar__menu-reservation {
+    display: flex; }
+    body nav.navbar .navbar__menu-reservation .navbar__list {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      body nav.navbar .navbar__menu-reservation .navbar__list span {
+        color: #ffffff; }
+      body nav.navbar .navbar__menu-reservation .navbar__list a {
+        padding: 1vw;
         color: #ffffff;
         font-weight: 600; }
   body nav.navbar .hamburger-icon {

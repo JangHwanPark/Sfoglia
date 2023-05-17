@@ -15,8 +15,16 @@ export const Navbar: React.FC = () => {
                 <li className="navbar__list">
                     <a href="#">Menu</a>
                 </li>
+            </ul>
+            <ul className="navbar__menu-reservation">
                 <li className="navbar__list">
-                    <a href="#">Reservation</a>
+                    <a href="#">KaKao</a>
+                </li>
+                <li className="navbar__list">
+                    <span>/</span>
+                </li>
+                <li className="navbar__list">
+                    <a href="#">Phone</a>
                 </li>
             </ul>
             <a href="#" className="hamburger-icon">
