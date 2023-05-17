@@ -1,5 +1,4 @@
 import React from 'react';
-import {faBars} from "@fortawesome/free-solid-svg-icons";
 import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
@@ -16,17 +15,16 @@ const Footer: React.FC = () => {
                 <div className="footer__column">
                     <h3 className="footer__title">메뉴소개</h3>
                     <ul className="footer__list">
-                        <li><a href="#">스테이크</a></li>
-                        <li><a href="#">파스타</a></li>
-                        <li><a href="#">샐러드</a></li>
-                        <li><a href="#">디저트</a></li>
+                        <li><a href="#">Pasta</a></li>
+                        <li><a href="#">Secondi Piatti</a></li>
+                        <li><a href="#">Side dish</a></li>
+                        <li><a href="#">Dessert</a></li>
                     </ul>
                 </div>
                 <div className="footer__column">
                     <h3 className="footer__title">예약안내</h3>
                     <ul className="footer__list">
                         <li><a href="#">예약하기</a></li>
-                        <li><a href="#">예약확인</a></li>
                     </ul>
                 </div>
                 <div className="footer__column">

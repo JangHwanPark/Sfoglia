@@ -6,8 +6,8 @@ import LineBrakeText from './LineBreakText/LineBrakeText';
 const Title = () => {
     return (
         <div className="about__title-wrapper">
-            <h1 className="about__title">Sfoglia</h1>
-            <h1 className="about__title">Taste the Flavors of Italy at Sfoglia</h1>
+            <h1 className="about__title">Taste the Flavors</h1>
+            <h1 className="about__title">of Italy at Sfoglia</h1>
         </div>
     );
 };
@@ -37,6 +37,20 @@ const About: React.FC = () => {
     );
 };
 
+const ChefIntroduction: React.FC = () => {
+    return (
+        <section className="introduction__section">
+            <div className="introduction__title-wrapper">
+                <h2 className="introduction__chef-title">Chef Title</h2>
+                <span>OOO</span>
+            </div>
+            <div className="introduction__chef-info">
+                <p>Hello World</p>
+            </div>
+        </section>
+    );
+};
+
 //Menu Section
 const Menu: React.FC = () =>  {
     return (
@@ -61,16 +75,14 @@ const Reservation: React.FC = () => {
     return (
         <section className="reservation__section">
             <div className="reservation__intro">
-
+                <h2 className="reservation__title">Reservation</h2>
             </div>
-            <div className="reservation__kakao">
+            <div className="reservation__btn-wrapper">
                 <button className="reservation__btn">KaKao</button>
-            </div>
-            <div className="reservation__phone">
                 <button className="reservation__btn">Phone</button>
             </div>
         </section>
     )
 }
 
-export {About, Menu, Reservation};
+export {About, ChefIntroduction, Menu, Reservation};

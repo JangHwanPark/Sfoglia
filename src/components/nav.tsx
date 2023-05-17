@@ -10,10 +10,13 @@ export const Navbar: React.FC = () => {
             </div>
             <ul className="navbar__menu">
                 <li className="navbar__list">
-                    <a href="#">Chef Intro</a>
+                    <a href="#">ABOUT</a>
                 </li>
                 <li className="navbar__list">
-                    <a href="#">Menu</a>
+                    <a href="#">MENU</a>
+                </li>
+                <li className="navbar__list">
+                    <a href="#">HOURS & LOCATION</a>
                 </li>
             </ul>
             <ul className="navbar__menu-reservation">
