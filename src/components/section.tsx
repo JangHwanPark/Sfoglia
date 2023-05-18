@@ -1,5 +1,9 @@
 import React from 'react';
 import LineBrakeText from './LineBreakText/LineBrakeText';
+import SpImg from '../assets/img/sp1.jpg';
+import SpImg2 from '../assets/img/sp2.jpg';
+import SpImg3 from '../assets/img/sp3.jpg';
+import SpImg4 from '../assets/img/sp4.jpg';
 
 
 // Title
@@ -28,10 +32,12 @@ const Introduction: React.FC = () => {
 const About: React.FC = () => {
     return (
         <section className="about__section">
-            <Title />
-            <Introduction />
+            <div className="about__intro">
+                <Title />
+                <Introduction />
+            </div>
             <div className="about__img-wrapper">
-                {/* img tag */}
+                <img src={SpImg} alt="sp1"/>
             </div>
         </section>
     );
@@ -40,12 +46,17 @@ const About: React.FC = () => {
 const ChefIntroduction: React.FC = () => {
     return (
         <section className="introduction__section">
-            <div className="introduction__title-wrapper">
-                <h2 className="introduction__chef-title">Chef Title</h2>
-                <span>OOO</span>
+            <div className="introduction__chef">
+                <div className="introduction__title-wrapper">
+                    <h2 className="introduction__chef-title">Chef Title</h2>
+                    <span>OOO</span>
+                </div>
+                <div className="introduction__chef-info">
+                    <p>Hello World</p>
+                </div>
             </div>
-            <div className="introduction__chef-info">
-                <p>Hello World</p>
+            <div className="introduction__img-wrapper">
+                <img src={SpImg2} alt="sp2"/>
             </div>
         </section>
     );
@@ -80,6 +91,9 @@ const Reservation: React.FC = () => {
             <div className="reservation__btn-wrapper">
                 <button className="reservation__btn">KaKao</button>
                 <button className="reservation__btn">Phone</button>
+            </div>
+            <div className="reservation__img-wrapper">
+                <img src={SpImg3} alt="sp3"/>
             </div>
         </section>
     )

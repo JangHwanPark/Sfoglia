@@ -1,2 +1,5 @@
 .about__section {
   padding: 1vw 2.7vw; }
+  .about__section .about__img-wrapper img {
+    box-sizing: border-box;
+    height: 30%; }
