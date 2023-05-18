@@ -9,22 +9,19 @@ import SpImg4 from '../assets/img/sp4.jpg';
 // Title
 const Title = () => {
     return (
-        <div className="about__title-wrapper">
-            <h1 className="about__title">Taste the Flavors</h1>
-            <h1 className="about__title">of Italy at Sfoglia</h1>
-        </div>
+        <h1 className="about__title">Taste the Flavors of Italy at Sfoglia</h1>
     );
 };
 
 // Introduction
 const Introduction: React.FC = () => {
     return (
-        <div className="about__introduction">
-            <LineBrakeText text={`Sfoglia는 전통적인 이탈리아 요리와 현대적인 감각을 결합한 독특한 메뉴를 선보입니다.
-          신선한 재료와 정성을 다한 손맛으로 직접 만든 파스타와 다양한 이탈리아 요리를 즐길 수 있습니다.
-          맛있는 음식과 함께 아늑한 분위기에서 특별한 경험을 선사합니다.`}
-            />
-        </div>
+        <LineBrakeText text={`Sfoglia는 전통적인 이탈리아 요리의 정수를 담고 있으면서도
+        현대적인 감각을 더해 독특한 메뉴를 선보입니다.
+        우리의 장인정신은 신선한 재료를 선택하는 것에서 시작되어,
+        직접 만든 파스타와 다양한 이탈리아 요리로 이어집니다.
+        이 모든 것은 아늑한 분위기 속에서 특별한 경험으로 조화롭게 뒤섞여,
+        맛있는 음식과 함께 보다 풍성한 이탈리아 식사를 즐기실 수 있습니다.`}/>
     );
 };
 
@@ -32,16 +29,25 @@ const Introduction: React.FC = () => {
 const About: React.FC = () => {
     return (
         <section className="about__section">
-            <div className="about__intro">
-                <Title />
-                <Introduction />
+            <div className="about__intro-wrapper">
+                <div className="about__flex-wrapper">
+                    <div className="about__intro">
+                        <Title />
+                        <Introduction />
+                    </div>
+                </div>
             </div>
-            <div className="about__img-wrapper">
-                <img src={SpImg} alt="sp1"/>
+            <div className="about__img-container">
+                <div className="about__img-wrapper">
+                    <div className="about__img">
+                        <img src={SpImg} alt="sp1"/>
+                    </div>
+                </div>
             </div>
         </section>
     );
 };
+
 
 const ChefIntroduction: React.FC = () => {
     return (
