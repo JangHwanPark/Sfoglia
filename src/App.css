@@ -90,10 +90,30 @@ body nav.navbar {
   .navbar__icons.active {
     display: flex; } }
 
+.introduction__section {
+  padding: 1vw 2.7vw; }
+
+.about__section {
+  padding: 1vw 2.7vw; }
+
+.menu__section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 2.7vw; }
+
+.reservation__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .reservation__section .reservation__btn-wrapper {
+    display: flex;
+    padding: 1vw; }
+
 .footer {
   background-color: #1d1d1f;
   color: #fff;
-  padding: 2rem 0; }
+  padding: 1vw 2.7vw; }
   .footer .footer__contents {
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +123,6 @@ body nav.navbar {
   .footer .footer__column {
     flex: 1;
     padding: 0 1rem;
-    margin-bottom: 2rem;
     max-width: 250px; }
     .footer .footer__column:last-child {
       margin-bottom: 0; }
@@ -133,3 +152,5 @@ body nav.navbar {
     line-height: 1.5;
     text-align: left;
     color: #c0c0c0; }
+    .footer .footer__text p {
+      width: 20vw; }

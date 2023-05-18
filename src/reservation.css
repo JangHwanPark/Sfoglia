@@ -1,0 +1,8 @@
+.reservation__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .reservation__section .reservation__btn-wrapper {
+    display: flex;
+    padding: 1vw; }
