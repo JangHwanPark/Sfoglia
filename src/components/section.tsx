@@ -16,12 +16,10 @@ const Title = () => {
 // Introduction
 const Introduction: React.FC = () => {
     return (
-        <LineBrakeText text={`Sfoglia는 전통적인 이탈리아 요리의 정수를 담고 있으면서도
-        현대적인 감각을 더해 독특한 메뉴를 선보입니다.
-        우리의 장인정신은 신선한 재료를 선택하는 것에서 시작되어,
-        직접 만든 파스타와 다양한 이탈리아 요리로 이어집니다.
-        이 모든 것은 아늑한 분위기 속에서 특별한 경험으로 조화롭게 뒤섞여,
-        맛있는 음식과 함께 보다 풍성한 이탈리아 식사를 즐기실 수 있습니다.`}/>
+        <LineBrakeText text={`Sfoglia는 전통적인 이탈리아 요리의 정수를 담고 있으면서도 현대적인 감각을 더해 독특한 메뉴를 선보입니다.
+        우리의 장인정신은 신선한 재료를 선택하는 것에서 시작되어, 직접 만든 파스타와 다양한 이탈리아 요리로 이어집니다.
+        이 모든 것은 아늑한 분위기 속에서 특별한 경험으로 조화롭게 뒤섞여, 맛있는 음식과 함께
+        보다 풍성한 이탈리아 식사를 즐기실 수 있습니다.`}/>
     );
 };
 
@@ -37,12 +35,10 @@ const About: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="about__img-container">
-                <div className="about__img-wrapper">
+            <div className="about__img-wrapper">
                     <div className="about__img">
                         <img src={SpImg} alt="sp1"/>
                     </div>
-                </div>
             </div>
         </section>
     );

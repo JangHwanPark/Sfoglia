@@ -1,2 +1,7 @@
 .introduction__section {
   padding: 1vw 2.7vw; }
+  .introduction__section .introduction_chef {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%; }

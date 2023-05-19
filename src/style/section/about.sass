@@ -5,10 +5,6 @@ section.about__section
   width: 100%
 
   .about__intro-wrapper
-    display: -webkit-box
-    display: -webkit-flex
-    display: -ms-flexbox
-    display: flex
     -webkit-box-align: center
     -webkit-align-items: center
     -ms-flex-align: center
@@ -16,6 +12,9 @@ section.about__section
     vertical-align: middle
 
     .about__flex-wrapper
+      display: -webkit-box
+      display: -webkit-flex
+      display: -ms-flexbox
       display: flex
       align-items: center
       width: 100%
@@ -25,7 +24,6 @@ section.about__section
         margin: auto
         padding-top: 5rem
         padding-bottom: 4rem
-        max-width: 80%
 
         .about__title
           margin-bottom: 1.5rem
@@ -35,30 +33,27 @@ section.about__section
           p
             text-align: center
 
-  .about__img-container
-    .about__img-wrapper
-        display: -webkit-box
-        display: -webkit-flex
-        display: -ms-flexbox
-        display: flex
-        width: 100%
-        height: 100%
+  .about__img-wrapper
+    .about__img
+      display: -webkit-box
+      display: -webkit-flex
+      display: -ms-flexbox
+      display: flex
       -webkit-box-align: center
+      width: 100%
+      height: 100%
 
-      .about__img
+      img
         position: absolute
         top: 0
         left: 0
         z-index: -2
-        //width: 100%
+        width: 100%
         height: 100%
-        width: 65% !important
-        background-repeat: no-repeat
-        background-size: cover
-        background-position: center center
+        object-fit: cover
 
-.about__intro-wrapper, .about__img-container
-  display: table-cell
+.about__intro-wrapper, .about__img-wrapper
+  display: flex
   position: relative
   z-index: 0
   min-height: 55vh
@@ -69,3 +64,9 @@ section.about__section
   text-align: center
   vertical-align: middle
   overflow: hidden
+
+.about__intro-wrapper
+  flex: 0 0 40%
+
+.about__img-wrapper
+  flex: 0 0 60%
